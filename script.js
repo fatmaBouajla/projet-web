@@ -10,3 +10,14 @@ document.querySelectorAll('.add-to-cart').forEach(btn => {
       setTimeout(() => this.textContent = 'Ajouter au panier', 1500);
   });
 });
+
+
+function load(){
+  document.querySelector(".prealoder").classList.add("hidden");
+}
+
+function loader(){
+  setInterval(load,2000);
+}
+
+window.onload=loader();
